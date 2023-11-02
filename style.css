@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', serif;
+    margin: 0;
+}
+
+body > section, body > article {
+    margin: 8px;
+}
+
+h1, h2 {
+    font-family: 'Trebuchet MS', serif
+}
+
+header > nav > ul {
+    list-style-type: none;
+    background-color: maroon;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header > nav > ul > li {
+    float: left;
+}
+
+header > nav > ul > li > a {
+    display: block;
+    color: #e0c306;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about, footer {
+    display: grid;
+    grid-template-areas:
+        'h1 h1'
+        'left right';
+}
+
+#about > h1 {
+    grid-area: h1;
+}
+
+#about > p {
+    font-size: medium;
+}
+
+#about > p, footer > aside {
+    grid-area: left;
+}
+
+#about > img, footer > form {
+    grid-area: right;
+}
+
+footer {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form {
+    width: 50%;
+    float: right;
+    justify-self: right;
+}
+
+footer > aside > nav > a {
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+}
